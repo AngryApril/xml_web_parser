@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Tariffs>
+    <RoamingTariff tariffName="MTS-Roaming">
+        <tariffID>M411</tariffID>
+        <operator>MTS</operator>
+        <callPrices innerCallPrice="0.2" outerCallPrice="1.0"
+                    cityCallPrice="1.4"/>
+        <payroll>10.0</payroll>
+        <smsPrice>2.0</smsPrice>
+        <parameters>
+            <favoriteNumbersAvailable>0</favoriteNumbersAvailable>
+            <tariffication>PER_MINUTES</tariffication>
+            <connectPrice>3.3</connectPrice>
+        </parameters>
+        <gigaByteCount>20</gigaByteCount>
+        <internationalCallPrice>2.2</internationalCallPrice>
+    </RoamingTariff>
+    <MobileCallSSTariff tariffName="Velcome-Roaming">
+        <tariffID>M422</tariffID>
+        <operator>MTS</operator>
+        <callPrices innerCallPrice="0.2" outerCallPrice="1.0"
+                    cityCallPrice="1.4"/>
+        <payroll>10.0</payroll>
+        <smsPrice>2.0</smsPrice>
+        <parameters>
+            <favoriteNumbersAvailable>0</favoriteNumbersAvailable>
+            <tariffication>PER_MINUTES</tariffication>
+            <connectPrice>3.3</connectPrice>
+        </parameters>
+    </MobileCallSSTariff>
+</Tariffs>

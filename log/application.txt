@@ -1,0 +1,6 @@
+[INFO ] 2019-07-11 20:48:45.115 [main] TariffsHandler - SAX parsing was made successfully.
+[INFO ] 2019-07-11 20:48:50.752 [main] StAXParser - Start StAX parsing.
+[INFO ] 2019-07-11 20:48:50.767 [main] StAXParser - StAX parsing was made successfully.
+[INFO ] 2019-07-11 20:48:50.773 [main] StAXParser - Start StAX parsing.
+[INFO ] 2019-07-11 20:48:50.776 [main] StAXParser - StAX parsing was made successfully.
+[INFO ] 2019-07-11 20:48:50.796 [main] StAXParser - Start StAX parsing.

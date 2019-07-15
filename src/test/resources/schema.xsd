@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:complexType name="Tariff">
+        <xs:sequence>
+            <xs:element name="tariffID">
+                <xs:simpleType>
+                    <xs:restriction base="xs:ID">
+                        <xs:pattern value="[a-zA-Z][\d]+"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="operator">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="MTS"/>
+                        <xs:enumeration value="VELCOM"/>
+                        <xs:enumeration value="LIFE"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="callPrices">
+                <xs:complexType>
+                    <xs:attribute name="innerCallPrice" use="required" type="xs:double"/>
+                    <xs:attribute name="outerCallPrice" use="required" type="xs:double"/>
+                    <xs:attribute name="cityCallPrice" use="required" type="xs:double"/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="payroll" type="xs:double"/>
+            <xs:element name="smsPrice" type="xs:double"/>
+            <xs:element name="parameters">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="favoriteNumbersAvailable" type="xs:int"/>
+                        <xs:element name="tariffication" type="xs:string"/>
+                        <xs:element name="connectPrice" type="xs:double"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="tariffName" use="required">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:pattern value="\w+.\w+"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+    </xs:complexType>
+    <xs:complexType name="InternetIncludedTariff">
+        <xs:complexContent>
+            <xs:extension base="Tariff">
+                <xs:sequence>
+                    <xs:element name="gigaByteCount" type="xs:positiveInteger"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="MobileCallsTariff">
+        <xs:complexContent>
+            <xs:extension base="Tariff"/>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="RoamingTariff">
+        <xs:complexContent>
+            <xs:extension base="Tariff">
+                <xs:sequence>
+                    <xs:element name="gigaByteCount" type="xs:positiveInteger"/>
+                    <xs:element name="internationalCallPrice" type="xs:double"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element name="Tariffs">
+        <xs:complexType>
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element name="InternetIncludedTariff" type="InternetIncludedTariff"/>
+                <xs:element name="MobileCallsTariff" type="MobileCallsTariff"/>
+                <xs:element name="RoamingTariff" type="RoamingTariff"/>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

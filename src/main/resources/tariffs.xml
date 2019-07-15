@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Tariffs>
+    <InternetIncludedTariff tariffName="StarLight">
+        <tariffID>M321</tariffID>
+        <operator>MTS</operator>
+        <callPrices innerCallPrice="0.5" outerCallPrice="0.9"
+                    cityCallPrice="1.0"/>
+        <payroll>0</payroll>
+        <smsPrice>0.1</smsPrice>
+        <parameters>
+            <favoriteNumbersAvailable>1</favoriteNumbersAvailable>
+            <tariffication>PER_MINUTES</tariffication>
+            <connectPrice>10.0</connectPrice>
+        </parameters>
+        <gigaByteCount>50</gigaByteCount>
+    </InternetIncludedTariff>
+    <InternetIncludedTariff tariffName="ComingHome">
+        <tariffID>v322</tariffID>
+        <operator>VELCOM</operator>
+        <callPrices innerCallPrice="0.3" outerCallPrice="1.2"
+                    cityCallPrice="1.0"/>
+        <payroll>2.2</payroll>
+        <smsPrice>0.2</smsPrice>
+        <parameters>
+            <favoriteNumbersAvailable>1</favoriteNumbersAvailable>              
+            <tariffication>PER_MINUTES</tariffication>
+            <connectPrice>5.0</connectPrice>
+        </parameters>
+        <gigaByteCount>50</gigaByteCount>
+    </InternetIncludedTariff>
+    <InternetIncludedTariff tariffName="LifeStartsNow">
+        <tariffID>L323</tariffID>
+        <operator>LIFE</operator>
+        <callPrices innerCallPrice="0.1" outerCallPrice="0.6"
+                    cityCallPrice="1.0"/>
+        <payroll>2.3</payroll>
+        <smsPrice>0.1</smsPrice>
+        <parameters>
+            <favoriteNumbersAvailable>3</favoriteNumbersAvailable>
+            <tariffication>PER_12_SECONDS</tariffication>
+            <connectPrice>0</connectPrice>
+        </parameters>
+        <gigaByteCount>100</gigaByteCount>
+    </InternetIncludedTariff>
+    <MobileCallsTariff tariffName="BackTo90s">
+        <tariffID>L324</tariffID>
+        <operator>LIFE</operator>
+        <callPrices innerCallPrice="0.1" outerCallPrice="0.5"
+                    cityCallPrice="4.4"/>
+        <payroll>5.0</payroll>
+        <smsPrice>0.1</smsPrice>
+        <parameters>
+            <favoriteNumbersAvailable>5</favoriteNumbersAvailable>
+            <tariffication>PER_MINUTES</tariffication>
+            <connectPrice>0</connectPrice>
+        </parameters>
+    </MobileCallsTariff>
+    <RoamingTariff tariffName="Velcom-Roaming">
+        <tariffID>v325</tariffID>
+        <operator>VELCOM</operator>
+        <callPrices innerCallPrice="0.9" outerCallPrice="1.9"
+                    cityCallPrice="1.9"/>
+        <payroll>0</payroll>
+        <smsPrice>0.3</smsPrice>
+        <parameters>
+            <favoriteNumbersAvailable>0</favoriteNumbersAvailable>
+            <tariffication>PER_MINUTES</tariffication>
+            <connectPrice>0</connectPrice>
+        </parameters>
+        <gigaByteCount>10</gigaByteCount>
+        <internationalCallPrice>2.6</internationalCallPrice>
+    </RoamingTariff>
+</Tariffs>

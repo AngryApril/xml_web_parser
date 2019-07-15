@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Tariffs>
+    <MobileCallsTariff tariffName="Velcom-666">
+        <tariffID>v999</tariffID>
+        <operator>VODAFONE</operator>
+        <callPrices innerCallPrice="0.2" outerCallPrice="1.0"
+                    cityCallPrice="1.4"/>
+        <smsPrice>2.0</smsPrice>
+        <parameters>
+            <favoriteNumbersAvailable>0</favoriteNumbersAvailable>
+            <tariffication>PER_MINUTES</tariffication>
+            <connectPrice>3.3</connectPrice>
+        </parameters>
+    </MobileCallsTariff>
+</Tariffs>
